@@ -1,0 +1,33 @@
+<h2>
+  {{nome}} - {{nome | lowercase}}
+</h2>
+<h2>
+  {{nome}} - {{ nome | uppercase }}
+</h2>
+<h2>
+  {{nome2}} - {{ nome2 | titlecase }}
+</h2>
+<h2>
+  {{nome}} - {{ nome | slice:0:5 }}
+</h2>
+<h2>
+  {{nome}} - {{ nome | uppercase | slice:0:5 }}
+</h2>
+<h2>
+  {{nomes}} - {{ nomes | json }}
+</h2>
+<h2>
+  {{0.50 | percent}}
+</h2>
+<h2>
+  {{0.50 | currency:'R$ '}}
+</h2>
+<h2>
+  data - {{ data | date }}
+</h2>
+<h2>
+  data - {{ data | date:'short' }}
+</h2>
+<h2>
+  {{ data | date:"dd/MM/yyyy HH:mm:ss" }}
+</h2>

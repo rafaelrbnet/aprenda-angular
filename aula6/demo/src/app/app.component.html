@@ -1,0 +1,19 @@
+<div *ngIf="mostraTitulo; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  comando verdadeiro
+</ng-template>
+
+<ng-template #elseBlock>
+  comando falso
+</ng-template>
+
+
+<h1 *ngIf="mostraTitulo">
+  verdade
+</h1>
+
+
+<h1 *ngIf="mostraTitulo==false">
+  falso
+</h1>

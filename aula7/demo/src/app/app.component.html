@@ -1,0 +1,35 @@
+<h1>Lista de carros</h1>
+<ul *ngFor="let carro of carros; index as i ">
+  <li>{{i}} - {{carro}}</li>
+</ul>
+
+
+<h1>Lista de carros - Primeiro</h1>
+<ul *ngFor="let carro of carros; first as f ">
+  <li>{{f}} - {{carro}}</li>
+</ul>
+
+<h1>Lista de carros Último</h1>
+<ul *ngFor="let carro of carros; last as l ">
+  <li>{{l}} - {{carro}}</li>
+</ul>
+
+<h1>Lista de carros Par</h1>
+<ul *ngFor="let carro of carros; even as e ">
+  <li>
+    <b *ngIf="e">
+      {{e}} - {{carro}}
+    </b>
+    <i *ngIf="!e">
+      {{e}} - {{carro}}
+    </i>
+
+  </li>
+</ul>
+
+<h1>Lista de carros Ímpar</h1>
+<ul *ngFor="let carro of carros; odd as o ">
+  <li>{{o}} - {{carro}}</li>
+</ul>
+
+
