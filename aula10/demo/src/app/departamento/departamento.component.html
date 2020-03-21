@@ -1,1 +1,12 @@
-<p>departamento works!</p>
+<div class="">
+
+</div>
+<h1>
+    Departamentos
+</h1>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let departamento of departamentos"  (click)=onselect(departamento)>
+        <span class="badge badge-secondary">{{departamento.id}}</span> {{departamento.nome}}
+    </li>
+</ul>
